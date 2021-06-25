@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Opdracht 11 - Boodschappenlijst</title>    
+</head>
+<body>
+    <h1>Opdracht 11 - Boodschappenlijst</h1>       
+    <section class="deel1">
+        <h2>Deel 1</h2>                 
+        <table class="tabeldeel1">
+            <thead class="tabeltitels">
+                <tr>
+                    <th>Product</th>
+                    <th>Prijs</th>
+                    <th>Aantal</th>
+                    <th>Subtotaal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="Brood">
+                    <th class=" productnaam">Brood</th>
+                    <td class="productPrice">1.00</td>
+                    <td><input class = "changeN min" id="mBrood" type="button" value = "-"><span class="productQuantity" id="aBrood">0</span><input class = "changeN plus" id="pBrood" type="button" value = "+"></td>
+                    <td class="productTotalCost" id="costBrood">0</td>
+                </tr>
+                <tr id="Broccoli">
+                    <th class="productnaam">Broccoli</th>
+                    <td class="productPrice">0.99</td>
+                    <td><input class = "changeN min" type="button" value = "-" id = "mBroccoli"><span class="productQuantity" id = "aBroccoli">0</span><input type="button" class = "changeN plus" value = "+" id = "pBroccoli"></td>
+                    <td class="productTotalCost" id="costBroccoli">0</td>
+                </tr>
+                <tr id="Krentenbollen">
+                    <th class="productnaam">Krentenbollen</th>
+                    <td class="productPrice">1.20</td>
+                    <td><input class="changeN min" type="button" value = "-" id = "mKrent"><span class="productQuantity" id="aKrent">0</span><input class = "changeN plus" type="button" value = "+" id = "pKrent"></td>
+                    <td class="productTotalCost" id="costKrentbol">0</td>
+                </tr>
+                <tr id="Noten">
+                    <th class="productnaam">Noten</th>
+                    <td class="productPrice">2.99</td>
+                    <td><input class="min" type="button" value = "-" id = "mNoot"><span class="productQuantity" id="aNoot">0</span><input class="plus" type="button" value = "+" id = "pNoot"></td>
+                    <td class="productTotalCost" id="costNoten">0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="foottitel" colspan="3">Totaal</th>
+                    <td id="totalCost">0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+</body>
+</html>
