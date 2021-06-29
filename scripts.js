@@ -1,14 +1,18 @@
 window.onload = () => {
-    let products = document.querySelectorAll('.tabeldeel1 tbody tr');
+    // TODO :: can all be consts
+    let products = document.querySelectorAll('.tabeldeel1 tbody tr'); // nice use of query selector
     let productP = document.getElementsByClassName('productPrice');
     let subT = document.getElementsByClassName('productTotalCost');
     let productQ = document.getElementsByClassName('productQuantity');
     let productN = document.getElementsByClassName('productnaam');
+    // TODO :: try using an array with objects, instead of multiple arrays
     let price = []
     let subTotal = [];
     let prodQuantity = [];
     let productNamen = [];
 
+    // TODO :: try to work the other way around. Define products in here and place them in the html
+    // TODO :: can combine these 4 for loops
     for (let i = 0; i < productP.length; i++) {
         price[i] = parseFloat(productP[i].innerHTML).toFixed(2);
     }
@@ -35,8 +39,12 @@ window.onload = () => {
         element.querySelector('.plus').addEventListener('click', plusProduct);
     });
 
+
+    // TODO :: min and plus uses a lot of the same code, you could put that in a function to reduce the amount of code
+
     function minProduct(event) {
         console.log(event)
+        // TODO :: use const where possible
         let total = 0;
         let tableRowParent = event.target.parentElement.parentElement;
         let productNaam = tableRowParent.id;
@@ -60,6 +68,7 @@ window.onload = () => {
     }
 
     function plusProduct(event) {
+        // TODO :: use const where possible
         let total = 0;
         let tableRowParent = event.target.parentElement.parentElement;
         let productNaam = tableRowParent.id;
